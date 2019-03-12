@@ -47,6 +47,6 @@ font-family: comic-sans, sans-serif;
   * sommige sites vervangen de lege plekken die door jou ad block worden gemaakt met hun eigen content / placeholder [reddit](https://www.reddit.com) en geven het als een error in de console [Google](google.com)
   
 bronnen:
-https://www.swarmonline.com/using-custom-fonts-in-web-design/
-https://www.quora.com/What-are-the-pros-and-cons-of-using-an-HTML5-local-storage-vs-cookies
-https://getrevising.co.uk/grids/local_storage
+https://www.swarmonline.com/using-custom-fonts-in-web-design/  
+https://www.quora.com/What-are-the-pros-and-cons-of-using-an-HTML5-local-storage-vs-cookies  
+https://getrevising.co.uk/grids/local_storage  
