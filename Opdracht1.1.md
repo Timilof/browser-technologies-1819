@@ -36,10 +36,10 @@ font-family: comic-sans, sans-serif;
   
  Navigeer naar instellingen in je browser en zet je local storage uit en probeer dan een van de onderstaande sites te bezoeken.
   
-  [facebook](facebook.com)
-  [slack](https://minor-web-1819.slack.com/)
-  [action](https://www.action.com/nl-nl/)
-  [github](https://github.com/Timilof/browser-technologies-1819)
+  [facebook](facebook.com)  
+  [slack](https://minor-web-1819.slack.com/)  
+  [action](https://www.action.com/nl-nl/)  
+  [github](https://github.com/Timilof/browser-technologies-1819)  
   
 ### Ad blockers
   content die wordt verstopt omdat je je ad blocker aan hebt
