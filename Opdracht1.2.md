@@ -2,16 +2,22 @@
 ## Opdracht 1.2 - Fork je OBA
 Hoe zit het eigenlijk met Progressive Enhancement van je OBA Web App? Waarschijnlijk kan daar wel het één en ander aan verbeterd worden, dat ding is immers in een week in elkaar gehackt!
 
-### Doel van deze opdracht
-Het doel van de deze opdracht is leren hoe je een website kan testen op een Device lab en hoe een screenreader werkt.
+### Ik heb getest op verschillende features, met de onderstaande features was de pagina nog redelijk bruikbaar:  
+  Afbeeldingen uitzetten  
+  Custom fonts uitzetten  
+  Javascript (volledig)    
+  Cookies
+  localStorage doet het niet
 
-### Uitleg
-Pas Progressive enhancement toe op je OBA Web App. Test de 8 features uit opdracht 1.1 en verbeter de code waar mogelijk. Test je OBA Web App in het Device Lab en laat je website voorlezen door een screenreader.
+### Met deze features had ik interessante resultaten:
+  Kleur uitzetten & kleurenblindheid instellen  
+  Voor mensen met een kleurenblinde afwijking ziet de website er natuurlijk anders uit maar is hij nog steeds prima te navigeren. De contrasten zijn groot genoeg.
+  Muis/Trackpad werkt niet
+ Dit bracht grote problemen want je kunt niet heel makkelijk tabben en elementen selecteren op mijn oude site, op de hernieuwde wel. Verder leest de screenreader de waardes van de checkboxes niet op dus daar kan echt een verbetering in komen.
+  Breedband internet uitzetten
+ Op een sloom 3g netwerk duurt de site bijna tien seconden om helemaal te laden en kun je voor een paar secondes niet klikken op interactieve elementen. 
 
-Gebruik onderstaande artikelen om je code te optimaliseren en om je voor te bereiden op de opevering van aanstaande vrijdag:
-- [Understanding Progressive Enhancement by Aaron Gustafson](https://alistapart.com/article/understandingprogressiveenhancement)
-- [I Turned Off JavaScript and it was Glorious](https://www.wired.com/2015/11/i-turned-off-javascript-for-a-whole-week-and-it-was-glorious/)
-- [The accessibility mindset](https://24ways.org/2015/the-accessibility-mindset/)  
+  
 
 
 ### Criteria
