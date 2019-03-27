@@ -1,0 +1,28 @@
+<% include partials/header.ejs %>
+
+<body>
+
+<a class="imglink" href="/"><img src="https://vignette.wikia.nocookie.net/runescape2/images/5/5e/Frog_%28Court_Cases%29_chathead.png/revision/latest?cb=20121206170121" alt=""></a>
+
+<h1>Here's what you need to buy</h1>
+
+<main>
+  <div class="boodscappenlist">
+      <h2>Shopping list</h2>
+    <% if (cBooks) { cBooks.forEach(function(loaf) { %>
+      <p><%= loaf.name%></p>
+    <% })} %>
+
+  </div>
+  <button type="button" name="button">Copy list to clipboard</button>
+  <!-- <button type="button" name="button">Mail my list</button> -->
+
+  <a class="sick_button" href="mailto:tostilovver_420@gmail.com?
+  &amp;subject=Mijn%20tosti%20boodschappenlijst%20
+  &amp;body=You'll%20need%20these%20items%20to%20make%20your'e%20tostie:%20%0D%0A
+<% if (cBooks) { cBooks.forEach(function(loaf) { %>
+∙<%= loaf.name%>%20%0D%0A
+<% })} %>">Mail my list</a>
+</main>
+
+<% include partials/footer.ejs %>
