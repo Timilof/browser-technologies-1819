@@ -2,19 +2,21 @@
 
 <body>
 
-<a class="imglink" href="/"><img src="https://vignette.wikia.nocookie.net/runescape2/images/5/5e/Frog_%28Court_Cases%29_chathead.png/revision/latest?cb=20121206170121" alt=""></a>
+<a class="imglink" href="/"><img src="https://vignette.wikia.nocookie.net/runescape2/images/5/5e/Frog_%28Court_Cases%29_chathead.png/revision/latest?cb=20121206170121" alt="Link me Home"></a>
 
 <h1>Here's what you need to buy</h1>
 
 <main>
-  <div class="boodscappenlist">
-      <h2>Shopping list</h2>
-    <% if (cBooks) { cBooks.forEach(function(loaf) { %>
-      <p><%= loaf.name%></p>
-    <% })} %>
+<div class="holding">
+<!-- <h2>Shopping list</h2> -->
+<textarea id="listInput" class="boodscappenlist" name="name" rows="8" cols="25">
+<% if (cBooks) { cBooks.forEach(function(loaf) { %>
+<%= loaf.name%>
+<% })} %>
+</textarea>
 
-  </div>
-  <button type="button" name="button">Copy list to clipboard</button>
+</div>
+<button class="copi" type="button" name="button">Copy list to clipboard</button>
   <!-- <button type="button" name="button">Mail my list</button> -->
 
   <a class="sick_button" href="mailto:tostilovver_420@gmail.com?
@@ -25,4 +27,6 @@
 <% })} %>">Mail my list</a>
 </main>
 
-<% include partials/footer.ejs %>
+<script><% include ../src/js/2script.js %></script>
+</body>
+</html>

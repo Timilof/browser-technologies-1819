@@ -3,7 +3,7 @@
 <body>
 
 
-  <a class="imglink" href="#"><img src="https://vignette.wikia.nocookie.net/runescape2/images/5/5e/Frog_%28Court_Cases%29_chathead.png/revision/latest?cb=20121206170121" alt=""></a>
+  <a class="imglink" href="#"><img src="https://vignette.wikia.nocookie.net/runescape2/images/5/5e/Frog_%28Court_Cases%29_chathead.png/revision/latest?cb=20121206170121" alt="Link to home"></a>
   <h1>Let's make een tosti!</h1>
   <form class="" action="/detail" method="post">
     <fieldset class="bread">
@@ -26,7 +26,7 @@
 <div class="container">
       <% if (chies) { chies.forEach(function(cut) { %>
       <div class="item">
-        <input id="<%= cut.name %> test" type="checkbox" name="<%=cut.name%>" value="<%=cut.name%>">
+        <input id="<%= cut.name %>" test" type="checkbox" name="<%=cut.name%>" value="<%=cut.name%>">
         <label for="<%= cut.name %>"><img src="<%=cut.cover_image%>" alt="<%=cut.name%>"></label>
         <p>
           <%=cut.name%>
@@ -52,20 +52,19 @@
     </fieldset>
 
 
-    <input type="submit" name="" value="make my list">
+    <input class="subm" type="submit" name="" value="make my list">
 
   </form>
 
-  <main>
-    <div class="boodscappenlist">
-        <h2>Shopping list</h2>
+  <main class="none">
+<div class="holding">
+<textarea id="listInput" class="boodscappenlist" name="name" rows="8" cols="25"></textarea>
+</div>
 
+    <button class="copi" type="button" name="button">Copy list to clipboard</button>
+    <button class="remover" type="button" name="button">Empty list</button>
 
-    </div>
-    <button type="button" name="button">Copy list to clipboard</button>
-    <!-- <button type="button" name="button">Mail my list</button> -->
-
-    <a class="sick_button" href="mailto:tostilovver_420@gmail.com?
+    <a class="sick_button linkTo" href="mailto:tostilovver_420@gmail.com?
     &amp;subject=Mijn%20tosti%20boodschappenlijst%20
     &amp;body=You'll%20need%20these%20items%20to%20make%20your'e%20tostie:
   ">Mail my list</a>
