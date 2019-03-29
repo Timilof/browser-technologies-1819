@@ -9,6 +9,7 @@
 body{
 background-color: #f5f5f5;
 font-family: 'Germania One', verdana, sans-serif;
+margin: 0px;
 }
 
 h1{
@@ -38,9 +39,9 @@ width: 200px;
 }
 
 legend{
-color: var(--form--orange);
+color: var(--form--yello);
 font-family: 'Germania One', verdana, sans-serif;
-font-size: 25px;
+font-size: 29px;
 margin: auto;
 }
 
@@ -126,10 +127,12 @@ background-color: var(--form--brown);
 color: var(--form--orange);
 }
 
+.sick_button:nth-of-type(2){
+background-color: var(--form--orange);
+color: #000;
+}
 
-
-form, main{
-  max-width: 90%;
+form, .results{
   margin: auto;
   background-color: var(--form--blue);
   border-radius: 15px;
@@ -140,16 +143,14 @@ form{
 padding-top: 24px;
 padding-bottom: 24px;
 }
-main{
-  display: flex;
-  flex-wrap: wrap;
-  /* padding: 50px; */
+.results{
+  /* padding: 20px; */
 }
 
 /* #483e2e */
 fieldset{
 border: none;
-border-bottom: 1px solid var(--form--orange);
+border-bottom: 1px solid var(--form--yello);
 /* display: flex; */
 justify-content: center;
 align-items: center;
@@ -167,14 +168,12 @@ margin-bottom: 2em;
         flex-wrap: nowrap;
         overflow-x: auto;
         overflow: scroll;
-        max-width: 90vw;
         align-items: baseline;
         /* overflow-y: hidden; */
     }
 
 .container .item {
         flex: 0 0 auto;
-        /* margin-right: 2em; */
         margin-bottom: 1em;
     }
 
@@ -230,18 +229,81 @@ form :checked + label:before {
 }
 
 
-.container{
-  justify-content: center;
-}
+
 .none{
 display: none;
 }
 .holding{
-  /* max-width: 50%; */
-  /* overflow-y: scroll; */
-  /* max-height: 200px; */
+  margin-bottom: 20px;
+overflow: hidden;
+}
+
+.buttoms{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+margin-bottom: 20px;
+}
+
+.buttoms > *{
+margin-bottom: 10px;
 }
 
 textarea{
 font-size: 30px;
+width: 100%
+}
+
+
+@media (max-width: 30em){
+  body {
+    background-color: lightblue;
+  }
+
+.container{
+max-width: 97vw;
+}
+}
+
+
+@media (min-width: 30em) and (max-width: 55em)  {
+  body {
+    background-color: var(--form--yello);
+  }
+    form, .results{
+    max-width: 95%;
+    }
+  .container{
+    max-width: 100%;
+    width: 80vw;
+  }
+}
+
+@media (min-width: 55em) and (max-width: 65em)  {
+  .container{
+    max-width: 100%;
+    width: 85vw;
+  }
+  form, .results{
+  max-width: 93%;
+  }
+body{
+background-color: var(--form--gold);
+}
+}
+
+@media (min-width: 65em) {
+  .container{
+    justify-content: center;
+  }
+  body {
+    background-color: var(--form--brown);
+  }
+
+form, .results{
+max-width: 90%;
+}
+.container{
+max-width: 90vw;
+}
 }

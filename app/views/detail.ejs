@@ -6,7 +6,7 @@
 
 <h1>Here's what you need to buy</h1>
 
-<main>
+<section class="results">
 <div class="holding">
 <!-- <h2>Shopping list</h2> -->
 <textarea id="listInput" class="boodscappenlist" name="name" rows="8" cols="25">
@@ -16,8 +16,9 @@
 </textarea>
 
 </div>
-<button class="copi" type="button" name="button">Copy list to clipboard</button>
-  <!-- <button type="button" name="button">Mail my list</button> -->
+<div class="buttoms">
+<button class="none copi" type="button" name="button">Copy list to clipboard</button>
+<a class="sick_button" href="/">Make new list</a>
 
   <a class="sick_button" href="mailto:tostilovver_420@gmail.com?
   &amp;subject=Mijn%20tosti%20boodschappenlijst%20
@@ -25,7 +26,8 @@
 <% if (cBooks) { cBooks.forEach(function(loaf) { %>
 ∙<%= loaf.name%>%20%0D%0A
 <% })} %>">Mail my list</a>
-</main>
+</div>
+</section>
 
 <script><% include ../src/js/2script.js %></script>
 </body>
