@@ -1,9 +1,26 @@
+function featureCheck(feature, where, type) {
+   return feature in where
+       && type ?
+           typeof where[feature] === type
+           : true
+}
+
+
+function enableScript() {
+   return featureCheck('classList', document.body)
+       && featureCheck('Array', Array.prototype, 'function')
+       && featureCheck('querySelectorAll', document.body, 'function')
+       && featureCheck('getElementById', document.body)
+}
+
+if (enableScript()) {
+
 var fieldset = Array.from(document.querySelectorAll("fieldset"));
-var listo = document.querySelector(".results")
-var formt = document.querySelector("form")
-var cop = document.querySelector(".copi")
-var rem = document.querySelector(".remover")
-var subby = document.querySelector(".subm")
+var listo = document.querySelector(".results");
+var formt = document.querySelector("form");
+var cop = document.querySelector(".copi");
+var rem = document.querySelector(".remover");
+var subby = document.querySelector(".subm");
 var mail = document.querySelector('.linkTo');
 
 for (var i = 0; i < fieldset.length; i++) {
@@ -44,6 +61,7 @@ var elemet =
 ${items}
 `
 holder.insertAdjacentHTML('beforeend', elemet)
-// this.removeEventListener("click", clickedItem)
+// Feature detection written in corporation with Stijn AA and Maikel van Veen
+}
 }
 }
