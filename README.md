@@ -10,7 +10,11 @@ The core functionality of this application is to add tostie ingredients/items to
 
 This app is buildt with progressive enhancement in mind however still may or may not break (but only visually) on certain devices... handle with care.
 
-![home screen](/src/img/screen1.png)
+I made a wireflow prior to making the app so as to visualise the flow of the user thrugh the app.  
+
+![wireflow app](/app/src/img/schetsen1.png)  
+
+![home screen](/src/img/screen1.png)  
 
 ### feature detection
 
@@ -27,4 +31,4 @@ function enableScript() {
 ```
 
 ### opdracht wireflow schetsen
-![wireflow app](/src/img/schetsen1.png)
+
